@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/navigationView"
+            android:layout_below="@+id/add_story_actionbar" />
+
+        <RelativeLayout
+            android:id="@+id/add_story_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorWhite">
+
+            <ImageButton
+                android:id="@+id/ib_exit_add_story"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/notosanskr_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="검색 결과"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/notosanskr_regular"
+            android:includeFontPadding="false"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconSize="@dimen/bottom_navigation_icon_size"
+            app:itemIconTint="@drawable/item_color_state"
+            app:itemTextColor="@drawable/item_color_state"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

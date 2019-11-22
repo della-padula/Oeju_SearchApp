@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/add_story_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:id="@+id/ib_exit_add_story"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/notosanskr_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="검색 기록"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_party_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_story_actionbar" />
+
+</RelativeLayout>

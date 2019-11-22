@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dbaa16</color>
+    <color name="colorPrimaryDark">#F2F4F3</color>
+    <color name="colorAccent">#f5c922</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMainBack">#F2F4F3</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorSplashBackground">#f5f5f5</color>
+
+    <color name="hashTag">#dbaa16</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dialog_transparent">#30000000</color>
+
+    <color name="signUpEdit">#997500</color>
+
+    <color name="errorRed">#E60012</color>
+    <color name="submitDisable">#999999</color>
+    <color name="submitEnable">#d39e00</color>
+
+    <color name="entryBalloon">#666666</color>
+
+    <color name="semiBlack">#222222</color>
+    <color name="btnActive">#f5c922</color>
+
+    <color name="ActiveText">#222222</color>
+    <color name="inActiveText">#888888</color>
+    <color name="inActiveBtn">#EEEEEE</color>
+</resources>
